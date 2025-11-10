@@ -1,6 +1,6 @@
 
 # pip install numpy matplotlib
-# python ga_rect_packing_demo.py
+# python main.py
 
 
 import random
@@ -31,7 +31,7 @@ num_rects = len(rectangles)
 
 # Paramètres de l'algorithme génétique, à ajuster si besoin
 population_size = 120
-generations = 200
+generations = 100
 num_elites = 2  # garder les meilleurs
 tournament_size = 4
 crossover_prob = 0.8
@@ -247,6 +247,6 @@ animation = FuncAnimation(fig, update_animation, frames=generations,
                           interval=80, blit=False, repeat=False)
 
 fig.suptitle(
-    "Algorithme Génétique pour l'empaquetage de rectangles", fontsize=14)
+    "Test d'un algo génétique", fontsize=14)
 plt.tight_layout()
 plt.show()
